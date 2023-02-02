@@ -31,13 +31,13 @@ class PostController extends Controller
         ]);
     }
 
-    // public function everything() {
-    //     $posts = Post::all();
-    //     $categories = Category::all();
+// public function everything() {
+//     $posts = Post::all();
+//     $categories = Category::all();
 
-    //     return response()->json([
-    //         'posts' => $posts,
-    //         'categories'=> $categories,
-    //     ]);
-    // }
+//     return response()->json([
+//         'posts' => $posts,
+//         'categories'=> $categories,
+//     ]);
+// }
 }

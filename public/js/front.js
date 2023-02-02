@@ -5075,9 +5075,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'App',
+  name: "App",
   data: function data() {
     return {
       arrPosts: []
@@ -5085,7 +5099,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {
     var _this = this;
-    axios.get('/api/posts').then(function (response) {
+    axios.get("/api/posts").then(function (response) {
       return _this.arrPosts = response.data.results;
     });
   }
@@ -11102,14 +11116,18 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("p", { staticClass: "card-text flex-grow-1" }, [
-                  _vm._v(_vm._s(post.excerpt)),
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(post.excerpt) +
+                      "\n                        "
+                  ),
                 ]),
                 _vm._v(" "),
                 _c(
                   "a",
                   {
                     staticClass: "btn btn-primary",
-                    attrs: { href: "/posts/" + post.slug },
+                    attrs: { href: "/posts/" + post.id },
                   },
                   [_vm._v("Leggi")]
                 ),
